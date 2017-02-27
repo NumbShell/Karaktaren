@@ -5,18 +5,65 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container mainpage">
-        <h1>Library</h1>
-        <p>Load database stuff here</p>
-        <div class="stats col-md-4">
-                <h1>STATS</h1>
-                <ul>
-                    <li>Your favorite genre is <span style="color: #ec393e">fantasy</span>
-                    and you have spent <span style="color: #ec393e">46</span> hours
-                    watching movies. Your most viewed movie is <span style="color: #ec393e">Warcraft</span>
-                    which you have seen <span style="color: #ec393e">4</span> times. You gave
-                        <span style="color: #ec393e">Avatar</span> the highest rating.</li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="seen_movies_list">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Img</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Runtime(min)</th>
+                    <th>Release Date</th>
+                    <th>Rating</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="movie_list_id">1</td>
+                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
+                    <td>Akira</td>
+                    <td>Sci-fi</td>
+                    <td>124</td>
+                    <td>1988</td>
+                    <td>9/10</td>
+                    <td><a href="Remove" class="btn_remove">Remove</a></td>
+                    <td><a href="Edit">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="movie_list_id">2</td>
+                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/7/77356.webp?s=f27e2c2b81f0e5262fcd54fe31ee6adc" alt=""></td>
+                    <td>FLCL</td>
+                    <td>Sci-fi</td>
+                    <td>124</td>
+                    <td>2000</td>
+                    <td>8/10</td>
+                    <td><a href="Remove" class="btn_remove">Remove</a></td>
+                    <td><a href="Edit">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="movie_list_id">3</td>
+                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
+                    <td>Akira</td>
+                    <td>Sci-fi</td>
+                    <td>124</td>
+                    <td>1988</td>
+                    <td>9/10</td>
+                    <td><a href="Remove" class="btn_remove">Remove</a></td>
+                    <td><a href="Edit">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="movie_list_id">4</td>
+                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
+                    <td>Akira</td>
+                    <td>Sci-fi</td>
+                    <td>124</td>
+                    <td>1988</td>
+                    <td>9/10</td>
+                    <td><a href="Remove" class="btn_remove">Remove</a></td>
+                    <td><a href="Edit">Edit</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 {% endblock %}

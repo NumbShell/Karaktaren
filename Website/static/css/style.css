@@ -29,8 +29,10 @@ a {
     background: transparent;
     text-decoration: none;
 
+    /*
     text-shadow: 0 0 2px white;
     box-shadow: 0 0 2px white;
+    */
 
     padding: 10px 14px;
     margin: 20px 5px;
@@ -149,6 +151,7 @@ ul li {
 }
 
 .stats {
+    display: none;
     text-align: center;
     
     border-bottom: 1px solid white;
@@ -214,4 +217,36 @@ input {
     position: fixed;
     z-index: 0;
     opacity: 0.2;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 5px;
+
+    width: 700px;
+}
+
+td img {
+    max-width: 50px;
+    max-height:50px;
+}
+
+.seen_movies_list {
+    text-align: center;
+    border-radius: 3px;
+    table-layout:fixed;
+}
+
+.seen_movies_list h1 {
+    background: #3b5fe1;
+    padding: 10px;
+}
+
+tr .movie_list_id {
+    width: 30px;
+    max-width: 30px;
+}
+
+.btn_remove {
+    background: #bb271b;
 }
