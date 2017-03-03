@@ -1,10 +1,12 @@
 from flask import Flask, render_template, url_for, request
+
 import mysql.connector
+
 
 app = Flask(__name__)
 
 def db():
-    con = mysql.connector.connect(user='darkmatter', password='123', host='192.168.38.103',
+    con = mysql.connector.connect(user='monty', password='123', host='192.168.38.103',
                                   database='classicMovie')
     return con
 
