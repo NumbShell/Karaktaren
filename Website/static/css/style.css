@@ -221,7 +221,7 @@ input {
 
 table, th, td {
     border: 1px solid white;
-    padding: 5px;
+    padding: 10px;
 
     width: 700px;
 }
@@ -238,7 +238,7 @@ td img {
 }
 
 .seen_movies_list h1 {
-    background: #3b5fe1;
+    background: #ec393e;
     padding: 10px;
 }
 
@@ -249,4 +249,8 @@ tr .movie_list_id {
 
 .btn_remove {
     background: #bb271b;
+}
+
+.some-info {
+    margin-top: 100px;
 }

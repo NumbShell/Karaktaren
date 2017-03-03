@@ -10,60 +10,31 @@
             <table>
                 <tr>
                     <th>#</th>
-                    <th>Img</th>
-                    <th>Title</th>
+                    <th colspan="2">Title</th>
                     <th>Genre</th>
                     <th>Runtime(min)</th>
                     <th>Release Date</th>
-                    <th>Rating</th>
+                    <th>Rating 0-10</th>
                     <th></th>
                     <th></th>
                 </tr>
-                <tr>
-                    <td class="movie_list_id">1</td>
-                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
-                    <td>Akira</td>
-                    <td>Sci-fi</td>
-                    <td>124</td>
-                    <td>1988</td>
-                    <td>9/10</td>
-                    <td><a href="Remove" class="btn_remove">Remove</a></td>
-                    <td><a href="Edit">Edit</a></td>
-                </tr>
-                <tr>
-                    <td class="movie_list_id">2</td>
-                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/7/77356.webp?s=f27e2c2b81f0e5262fcd54fe31ee6adc" alt=""></td>
-                    <td>FLCL</td>
-                    <td>Sci-fi</td>
-                    <td>124</td>
-                    <td>2000</td>
-                    <td>8/10</td>
-                    <td><a href="Remove" class="btn_remove">Remove</a></td>
-                    <td><a href="Edit">Edit</a></td>
-                </tr>
-                <tr>
-                    <td class="movie_list_id">3</td>
-                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
-                    <td>Akira</td>
-                    <td>Sci-fi</td>
-                    <td>124</td>
-                    <td>1988</td>
-                    <td>9/10</td>
-                    <td><a href="Remove" class="btn_remove">Remove</a></td>
-                    <td><a href="Edit">Edit</a></td>
-                </tr>
-                <tr>
-                    <td class="movie_list_id">4</td>
-                    <td><img src="https://myanimelist.cdn-dena.com/r/96x136/images/anime/2/82596.webp?s=ef7f9260e84e21117eff325b5afe4cda" alt=""></td>
-                    <td>Akira</td>
-                    <td>Sci-fi</td>
-                    <td>124</td>
-                    <td>1988</td>
-                    <td>9/10</td>
-                    <td><a href="Remove" class="btn_remove">Remove</a></td>
-                    <td><a href="Edit">Edit</a></td>
-                </tr>
+
+                {% for m in movies %}
+                    <tr>
+                        <td>{{ m[0] }}</td>
+                        <td colspan="2">{{ m[1] }}</td>
+                        <td>{{ m[2] }}</td>
+                        <td>{{ m[3] }}</td>
+                        <td>{{ m[4] }}</td>
+                        <td>{{ m[5] }}</td>
+                        <td>{{ m[6] }}</td>
+                        <td><a href="#">Remove</a></td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                {% endfor %}
             </table>
+
+            <h1 class="some-info">You have spent <span style="font-weight: bold;">{{ time }}</span> hours watching movies, well done.</h1>
         </div>
     </div>
 {% endblock %}
